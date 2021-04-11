@@ -1,5 +1,6 @@
 # A-Better-Malloc
 Project to understand how memory allocator works
+
 By 19PT04 and 19PT37
 
 In this project, we will be implementing a memory allocator for the heap of a user-level process. Our functions will be similar to those provided by malloc() and free().
@@ -27,5 +28,7 @@ int Mem_IsValid(void *ptr): This function returns 1 if ptr falls within a curren
 int Mem_GetSize(void *ptr): If ptr falls within the range of a currently allocated object, then this function returns the size in bytes of that object; otherwise, the function returns -1. We may find this function useful when debugging your memory allocator
 
 We are implementing this project using LinkedList datastructure.
+
 To know about Our implementation details,Click this link below
+
 https://drive.google.com/file/d/1aJ02rTpJc2NaLmc1EQa0N_DDLPmj11-L/view?usp=sharing
