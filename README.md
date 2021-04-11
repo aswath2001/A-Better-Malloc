@@ -7,7 +7,7 @@ In this project, we will be implementing a memory allocator for the heap of a us
 
 This memory allocator is usually provided as part of a standard library and is not part of the OS. To be clear, the memory allocator operates entirely within the address space of a single process and knows nothing about which physical pages have been allocated to this process or the mapping from logical addresses to physical addresses.
 
-. First, when requesting memory from the OS, we must use mmap and we must call it only once
+First, when requesting memory from the OS, we must use mmap and we must call it only once
 
 Our implementations of Mem_Alloc(int size) and Mem_Free(void *ptr) are identical, except the ptr passed to Mem_Free does not have to have been previously returned by Mem_Alloc; instead, ptr can point to any valid range of memory returned by Mem_Alloc.
 For example, the following code sequence is valid with Our allocator, but not with the traditional malloc and free:
